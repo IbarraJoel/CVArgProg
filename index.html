@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV</title>
+    <link rel="stylesheet" href="/CSS/Estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../Icono/Favicon.png"/>
+</head>
+  <body>
+      <!-- Header -->
+      <div class="header">
+    
+        <div class="row-header">
+      
+          <div class="side-header">
+        
+            <div>
+              <img id="Imgportrait" class="Circular" src="" alt="Foto del CV">
+            </div>
+      
+          </div>
+    
+          <div class="main-header">
+            <div class="infopersona">
+              <span class="material-symbols-outlined">person</span>
+              <b>Nombre:</b><span id="nombreid"></span>
+            </div>
+            <div class="infopersona">
+              <span class="material-symbols-outlined">home_pin</span>
+              <b>Localidad:</b><span id="idpais"></span>
+            </div>
+            <div class="infopersona">
+              <span class="material-symbols-outlined">cake</span>
+                <b>Edad:</b><span id="Edad"></span><span> Años</span>
+            </div>
+        
+          </div>
+    
+        </div>
+  
+      </div>
+  
+
+  
+      <!-- Contenido -->
+        <div class="row">
+            <div class="side">
+                <h2>Sobre Mi</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nulla sit amet enim posuere tempus. Quisque quis nunc finibus dolor pharetra facilisis a non lorem. Duis luctus massa a urna tristique lacinia. Nunc sit amet molestie mauris. Mauris a dapibus ante, ac maximus leo. In interdum, felis id tincidunt tempus, velit ligula volutpat quam, nec scelerisque lacus magna in arcu. Nullam eu nunc finibus, commodo dolor sit amet, pretium lacus. Nunc consequat imperdiet ante eget scelerisque.
+
+                    Maecenas rutrum erat lacinia elementum dapibus. Ut sem dui, hendrerit in volutpat consectetur, dictum a felis. Nulla at diam mi. Integer facilisis nibh a elementum varius. Praesent accumsan ultricies arcu id pellentesque. Morbi non ornare enim. Nam sodales metus feugiat, porttitor leo aliquet, elementum tortor. Suspendisse porttitor vitae odio eget bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non turpis at mi convallis rutrum. Phasellus hendrerit nec dolor ac aliquam. Integer dictum commodo interdum. Vivamus pellentesque odio ac metus euismod, nec bibendum metus laoreet.
+                </p>
+            </div>
+            <div class="rside">
+                <!-- Barra de navegacion -->
+                <div class="navbar">
+                  <button onclick="MostrarInfo('Formacion')" type="button" name="botonFormacion" id="Formacion" class="botones">Formacion</button>
+                  <button onclick="MostrarInfo('Experiencia')" type="button" name="botonExperiencia" id="Experiencia" class="botones">Experiencia</button>
+                  <button onclick="MostrarInfo('Contacto')" type="button" name="botonContacto" id="Contacto" class="botones">Contacto</button>
+                  <button id="generaruser" class="botonRefresh"><span class="material-symbols-outlined">refresh</span></button>
+                </div>
+                <div class="ventana-main" id="ventana-principal">
+                
+                  <div id="null">
+                    <h1 class="navegante">Selecciona cualquier dato de interes</h1>
+                  </div>
+                
+                  <div id="Forma"> <h1>Formacion Academica</h1> 
+                  
+                    <ul>
+                      <li>Pellentesque fermentum porttitor rhoncus. Mauris condimentum tortor lorem, eget vehicula quam vulputate vitae. Quisque urna justo, lacinia quis nibh et, ornare dapibus nisi. Integer vehicula nec lorem at volutpat. Fusce dignissim auctor eros, vitae finibus diam. Proin sed eros sit amet ante placerat scelerisque. Nam dignissim porttitor accumsan. Aliquam ullamcorper est sit amet ipsum vestibulum, a pulvinar ipsum tincidunt. Morbi eu lacus velit. Nullam tellus orci, ultrices vel dapibus ac, condimentum id nulla.</li>
+                      <li>Nam rhoncus at erat nec dictum. Vivamus in nisi vel erat consequat vulputate iaculis venenatis arcu. Aliquam mauris nisl, cursus vel blandit eget, dictum ac dolor. Vivamus ultrices pellentesque nulla, a ultricies magna molestie in. Ut semper metus orci, id ultrices metus rutrum vitae. Praesent et vestibulum arcu. Aenean a diam sit amet lectus varius aliquet. Nunc quam metus, gravida a interdum nec, maximus in sapien. Donec faucibus sit amet metus in accumsan.</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus at augue id varius. Aliquam in commodo purus, eget fringilla turpis. Sed at massa blandit, ullamcorper lorem sit amet, lacinia turpis. Duis at pellentesque ex. Morbi ornare leo sollicitudin mauris ultrices, non tristique lectus egestas. Nulla bibendum non ipsum congue congue. Mauris vitae bibendum nisi, ullamcorper laoreet urna. Vestibulum cursus tempor tellus, at viverra lacus ultricies in. Ut accumsan luctus ligula imperdiet sollicitudin. Sed in auctor eros.</li>
+                    </ul>
+                  
+                  
+                  </div>
+                
+                  <div id="Exp"> <h1>Experiencia</h1> 
+                    <ul>
+                      <li>Pellentesque fermentum porttitor rhoncus. Mauris condimentum tortor lorem, eget vehicula quam vulputate vitae. Quisque urna justo, lacinia quis nibh et, ornare dapibus nisi. Integer vehicula nec lorem at volutpat. Fusce dignissim auctor eros, vitae finibus diam. Proin sed eros sit amet ante placerat scelerisque. Nam dignissim porttitor accumsan. Aliquam ullamcorper est sit amet ipsum vestibulum, a pulvinar ipsum tincidunt. Morbi eu lacus velit. Nullam tellus orci, ultrices vel dapibus ac, condimentum id nulla.</li>
+                      <li>Nam rhoncus at erat nec dictum. Vivamus in nisi vel erat consequat vulputate iaculis venenatis arcu. Aliquam mauris nisl, cursus vel blandit eget, dictum ac dolor. Vivamus ultrices pellentesque nulla, a ultricies magna molestie in. Ut semper metus orci, id ultrices metus rutrum vitae. Praesent et vestibulum arcu. Aenean a diam sit amet lectus varius aliquet. Nunc quam metus, gravida a interdum nec, maximus in sapien. Donec faucibus sit amet metus in accumsan.</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus at augue id varius. Aliquam in commodo purus, eget fringilla turpis. Sed at massa blandit, ullamcorper lorem sit amet, lacinia turpis. Duis at pellentesque ex. Morbi ornare leo sollicitudin mauris ultrices, non tristique lectus egestas. Nulla bibendum non ipsum congue congue. Mauris vitae bibendum nisi, ullamcorper laoreet urna. Vestibulum cursus tempor tellus, at viverra lacus ultricies in. Ut accumsan luctus ligula imperdiet sollicitudin. Sed in auctor eros.</li>
+                    </ul>
+                  </div>
+                
+                  <div id="Cont" class="InfContainer"> 
+                    <h1>Contacto</h1>
+                    <p class="infopersona"><span class="material-symbols-outlined">call</span><span id="idnumero"></span></p>
+                    <p class="infopersona"><span class="material-symbols-outlined">mail</span><span id="idcorreo"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <!-- Footer -->
+      <div class="footer">
+        <h2>Hecho por Joel Ibarra para Argentina Programa 4.0</h2>
+      </div>
+    <script src="/JS/FuncionBotones.js"></script>
+  </body>
+</html>
